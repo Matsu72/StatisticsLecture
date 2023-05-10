@@ -1,0 +1,12 @@
+version: '3'
+services:
+  python3:
+    build: .
+    container_name: 'StatisticsLecture'
+    working_dir: '/StatisticsLecture'
+    tty: true
+    stdin_open: true
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/StatisticsLecture
